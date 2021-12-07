@@ -149,8 +149,14 @@ export default {
       emailjs.sendForm('service_9an8hox', 'template_ua9cxcq', this.$refs.form, 'user_6GkDUMeDNhKlmcZcGndGd')
         .then((result) => {
             console.log('SUCCESS!', result.text);
+                  swal("Success", "Completed !", "success"); 
+
         }, (error) => {
             console.log('FAILED...', error.text);
+              swal("Rejected","Fill all the required fields correctly !", "error", {
+                    button: "Got It!"
+                });
+            
         });
     }
   }
@@ -168,7 +174,7 @@ export default {
 .body-contact {
   min-height: calc(100vh - 56px);
   background-size: cover;
-  background-image: url("../assets/contack_back.jpg");
+   background-image: url("../assets/contack_back.jpg");
 }
 .bigbox {
  background-color:#00000090;
