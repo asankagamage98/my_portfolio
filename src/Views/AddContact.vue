@@ -8,7 +8,7 @@
           <img
             id="profImg"
             class="rounded-circle overflow-hidden imgsrc"
-            src="../assets/Contact_me.jpg"
+            src="../assets/cont.png"
             alt="pro pic"
           />
         </div>
