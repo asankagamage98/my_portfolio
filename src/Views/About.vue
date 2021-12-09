@@ -9,6 +9,16 @@
               I am currently in the 3rd year 1st semester of my degree program.<br>
               I am responsible and hardworking individual, and I believe that I am a good team player .<br> </p>
           </div>
+           <div>
+            <code><img width="15%" src="https://www.vectorlogo.zone/logos/java/java-vertical.svg"></code>
+            <code><img width="15%" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg"></code>
+            <code><img width="15%" src="https://www.vectorlogo.zone/logos/springio/springio-ar21.svg"></code>
+            <code><img width="15%" src="https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.svg"></code>
+            <code><img width="15%" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg"></code>
+            <code><img width="15%" src="https://www.vectorlogo.zone/logos/android/android-ar21.svg"></code>
+            
+           
+          </div>
   </div>
   </div>
 </template>
@@ -23,7 +33,7 @@ export default {
 .body-contact {
   min-height: calc(100vh - 56px);
   background-size: cover;
-   background-image: url("../assets/contack_back.jpg");
+   background-image: url("../assets/bg55.jpg");
 }
 
 .bigbox {

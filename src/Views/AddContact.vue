@@ -1,24 +1,24 @@
 <template>
 <div class="body-contact">
 <div class="bigbox position-absolute top-50 start-50 translate-middle " >
-  <div style="color:white; margin-left:50px;">
-    <br><h1> Contact Form</h1><br>
+  <div style="">
+    <br><h1 style="color: #F79F1F; margin-left:50px;font-family:Times New Roman;"> Contact Form</h1><br>
   </div>
-  <div class="col-md-4">
+  <!-- <div class="col-md-4">
           <img
             id="profImg"
             class="rounded-circle overflow-hidden imgsrc"
             src="../assets/cont.png"
             alt="pro pic"
           />
-        </div>
+        </div> -->
   <form ref="form" @submit.prevent="sendEmail" style ="margin-left:50px">
     
     <input class="textbox" type="text" name="from_name" placeholder="Name" v-model="name"><br>
      <input class="textbox" type="email" name="from_name" placeholder="Email" v-model="email "><br>
-     <textarea class="textbox" name="message" placeholder="Massage" style="height:100px;" v-model="massage"></textarea><br><br>
-     <button type="submit" value="Send" class="btn btn-outline-danger">Send Email</button>
-    <button @click='resetForm' class="btn btn-outline-success" style="width:110px;">  Clear  </button>  
+     <textarea class="textbox" name="message" placeholder="Massage" style="height:100px;" v-model="massage"></textarea><br><br><br>
+     <button type="submit" value="Send" class="btn btn-outline-danger btn1">Send Email</button>
+    <button @click='resetForm' class="btn btn-outline-success btn1" style="width:110px;">  Clear  </button>  
 
     <!-- <input type="submit" > -->
   </form>  
@@ -169,16 +169,33 @@ export default {
   width:450px;
   margin-top:20px;
   margin:20p;
+  color: white;
+  border-block-color:#F79F1F;
+  background: transparent;
   
+}
+.btn1 {
+  color: #F79F1F;
+  background-color:black;
+  border-style:solid;
+  border-color: #F79F1F;
+ 
+}
+.btn:hover {
+  color:black;
+  background-color:#F79F1F;
+  border-style:solid;
+  border-color: black;
 }
 .body-contact {
   min-height: calc(100vh - 56px);
   background-size: cover;
-   background-image: url("../assets/contack_back.jpg");
+   background-image: url("../assets/bg55.jpg");
 }
 .bigbox {
+  margin-top:40px;
  background-color:#00000090;
- height:500px;
+ height:560px;
  width:1000px;
 }
 .imgsrc {

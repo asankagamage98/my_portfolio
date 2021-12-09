@@ -34,7 +34,7 @@
         
        <router-link to="/portfolio">
           <li class="nav-item">
-           <button class="btn btn-outline-light" style="border: none; border-radius:20px;"><i class="fas fa-folder"></i> <span class="mx-2">Portfolio</span></button>
+           <button class="btn btn-outline-light" style="border: none; border-radius:20px;"><i class="fas fa-folder"></i> <span class="mx-2">Other</span></button>
           </li>
        </router-link> 
       </ul>

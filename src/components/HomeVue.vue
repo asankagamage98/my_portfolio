@@ -4,19 +4,27 @@
       <div class="row d-flex">
         <div class="col-md-8 mt-5" style="padding-right: 100px;">
           
-          <h1>I am ...</h1>
-          <p>
-            J.L.M.G Asanka Madhushan Gamage and a theard-year undergraduate at the Sri Lanka Institute of
-            Information Technology (SLIIT).
-          </p>
-          <button class="btn btn-primary" type="button" @click="submit()" style="margin-top:100px" >Download CV</button>
+          
+          <h1 style="font-family: MilleniaPersonalUse;
+                     font-size:50px; 
+                     -webkit-text-stroke: 0.8px #F79F1F;
+                     text-shadow: -1px 0 black, 0 1px black, 10px 0 black, 0 -1px black;
+">
+             Asanka Madhushan Gamage 
+            <!-- and a theard-year undergraduate at the Sri Lanka Institute of
+            Information Technology (SLIIT). -->
+          </h1><br>
+          <p>An undergraduate student at SLIIT campus Malabe...</p>
+          <br><br><br>
+          
+          <button class="btn  btn1" type="button" @click="submit()" style="margin-top:120px" >Download CV</button>
         </div>
         <div class="col-md-4">
           <img
             id="profImg"
             class="rounded-circle overflow-hidden"
             src="../assets/aa.jpg"
-            style="width: 350px; margin-top: 100px;"
+            style="width: 350px; margin-top: 90px;"
             alt="pro pic"
           />
         </div>
@@ -25,7 +33,7 @@
     <!--  ---------------------------------------------------------------------------------------------->
 
       
-      <div class="SocialMediaIcons" style="margin-left:100px;">
+      <div class="SocialMediaIcons" style="margin-left:500px; margin-top:50px;">
 
 
 
@@ -124,6 +132,8 @@
 </template>
 
 <script>
+
+
 export default {
 
 
@@ -151,19 +161,27 @@ methods : {
   
 </script>
 
-<>
-
 <style scoped>
 
 
 .body-home {
   min-height: calc(100vh - 56px);
   background-size: cover;
-  background-image: url("../assets/bg1.jpg");
+  background-image: url("../assets/bg55.jpg");
 }
 
-.over-filtering {
-
+.btn1 {
+  color: #F79F1F;
+  background-color:black;
+  border-style:solid;
+  border-color: #F79F1F;
+ 
+}
+.btn:hover {
+  color:black;
+  background-color:#F79F1F;
+  border-style:solid;
+  border-color: black;
 }
 * Social ICONS */
 
@@ -200,6 +218,7 @@ methods : {
   line-height: 60px;
   transition: all 0.3s ease-out;
 }
+
 .wrapper .button:nth-child(1):hover .icon{
   background: #171515;
 }

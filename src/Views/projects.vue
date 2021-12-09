@@ -14,14 +14,26 @@
             </div>
         </div><br>
 
-        <div class=" raw-5" >
+        <div class=" raw" >
             <div class="bigbox-1">
                 <div  > 
                     <img src="../assets/unilife.png" class="imghome" alt="">
                 </div>
 
                 <div>
-                    <p class="topics">UniLife mobile aplication for university students</p>
+                    <p class="topics">UniLife mobile application </p>
+                </div>
+            </div>
+        </div><br>
+
+         <div class=" raw" >
+            <div class="bigbox-1">
+                <div  > 
+                    <img src="../assets/nie.png" class="imghome" alt="">
+                </div>
+
+                <div>
+                    <p class="topics">Re designed NIE website </p>
                 </div>
             </div>
         </div><br>
@@ -67,7 +79,7 @@
 .body-project {
   min-height: calc(100vh - 56px);
   background-size: cover;
-  background-image: url("../assets/contack_back.jpg");
+  background-image: url("../assets/bg55.jpg");
  }
  .imghome {
      width:400px;
@@ -75,11 +87,13 @@
 
  }
  .topics {
-     font-size:30px;
+     font-size:33px;
      font-family: 'Times New Roman', Times, serif;
-     color: #ffff;
+     color: #F79F1F;
+     /* text-decoration: underline; */
      position: absolute;
      left:550px;
      margin-top:-150px;
+
  }
 </style>
