@@ -14,7 +14,6 @@ Vue.component('font-awesome-icon' ,FontAwesomeIcon);
 import VueSwal from 'vue-swal'
 Vue.use(VueSwal)
 
- 
 Vue.use(VueCarousel);
  
 

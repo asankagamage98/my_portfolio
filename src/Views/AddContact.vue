@@ -143,7 +143,9 @@ export default {
           this.massage ="";
 
              },
-
+     validationStatus: function(validation) {
+            return typeof validation != "undefined" ? validation.$error: false;
+        },
 
     sendEmail() {
       emailjs.sendForm('service_9an8hox', 'template_ua9cxcq', this.$refs.form, 'user_6GkDUMeDNhKlmcZcGndGd')

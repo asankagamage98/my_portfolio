@@ -1,6 +1,7 @@
 <template>
     <div class="bodycover">
-
+            
+            
     </div>
 </template>
 <script>
@@ -14,4 +15,5 @@
     background-image: url("../assets/bg55.jpg");
 
 }
+
 </style>

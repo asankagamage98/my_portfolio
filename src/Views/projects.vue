@@ -93,7 +93,7 @@
                </div>
                <div class="phra1">
                     <p>this  is our 1st year second semester project. there has been used <br>
-                    several languages that are ,html css and php.five group members joined for build thi project. </p>
+                    several languages that are ,html css and php.five group members joined for build this project. </p>
                 </div><br>
                 <div class="phra2">
                                    Github link <a href="https://github.com/asankagamage98/second_sem_project.git">https://github.com/asankagamage98/second_sem_project.git</a><br>

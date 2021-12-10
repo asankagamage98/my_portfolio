@@ -4,20 +4,32 @@
       <div class="row d-flex">
         <div class="col-md-8 mt-5" style="padding-right: 100px;">
           
-          
-          <h1 style="font-family: MilleniaPersonalUse;
+           <h1 style="font-family: Times New Roman;
                      font-size:50px; 
                      -webkit-text-stroke: 0.8px #F79F1F;
-                     text-shadow: -1px 0 black, 0 1px black, 10px 0 black, 0 -1px black;
-">
-             Asanka Madhushan Gamage 
+                     text-shadow: -1px 0 black, 0 1px black, 10px 0 black, 0 -1px black;"> 
+             Hi, I'm <br>
+             Asanka Madhushan Gamage. 
             <!-- and a theard-year undergraduate at the Sri Lanka Institute of
             Information Technology (SLIIT). -->
           </h1><br>
           <p>An undergraduate student at SLIIT campus Malabe...</p>
           <br><br><br>
+          <body>
+            <div class="wrapper_second">
+                <!-- <div class="static-txt">I'm a</div> -->
+                <ul class="dynamic-txts">
+                <li><span>YouTuber</span></li>
+                <li><span>Designer</span></li>
+                <li><span>Web Developer</span></li>
+                <li><span>Freelancer</span></li>
+                </ul>
+            </div>
+        </body>
+           
+        
           
-          <button class="btn  btn1" type="button" @click="submit()" style="margin-top:120px" >Download CV</button>
+          <button class="btn  btn1" type="button" @click="submit()" style="margin-top:85px" >Download CV</button>
         </div>
         <div class="col-md-4">
           <img
@@ -33,7 +45,7 @@
     <!--  ---------------------------------------------------------------------------------------------->
 
       
-      <div class="SocialMediaIcons" style="margin-left:500px; margin-top:50px;">
+     <div class="SocialMediaIcons" style="margin-left:500px; margin-top:50px;">
 
 
 
@@ -189,6 +201,14 @@ methods : {
     margin-left:50px;
     margin-top:80px;
 }
+typicalWrapper::after {
+  content: "|";
+  animation: blink 1s infinite step-start;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
 .icon{
   background-color:#171515;
 }
@@ -275,5 +295,66 @@ methods : {
 }
 
 
+
+body{
+  /* display: flex;
+  /* align-items: center;
+  justify-content: center; 
+  min-height: 100vh; */
+  background:none;
+}
+.wrapper_second{
+  /* display: flex; */
+  margin-left:-30px;
+ 
+}
+/* .wrapper .static-txt{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+} */
+.wrapper_second .dynamic-txts{
+  margin-left:0px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #F79F1F;
+  font-size: 30px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+/* .dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #343F4F;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite; 
+}*/
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
 
 </style>
