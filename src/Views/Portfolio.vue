@@ -1,19 +1,20 @@
 <template>
-    <div class="bodycover">
-            
-            
-    </div>
+<div class="body-contact">
+  
+  </div>
 </template>
+
 <script>
- 
+export default {
+
+}
 </script>
 
 <style scoped>
-.bodycover {
-    min-height: calc(100vh - 56px);
-    background-size: cover;
-    background-image: url("../assets/bg55.jpg");
-
+.body-contact {
+  min-height: calc(100vh - 56px);
+  background-size: cover;
+   background-image: url("../assets/bg55.jpg");
 }
 
 </style>

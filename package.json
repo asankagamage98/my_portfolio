@@ -19,7 +19,9 @@
     "vue-carousel": "^0.18.0",
     "vue-router": "^3.5.1",
     "vue-swal": "^1.0.0",
-    "vue-typical": "^2.1.0"
+    "vue-typical": "^2.1.0",
+    "vuelidate": "^0.7.7",
+    "vulidate": "^0.2.3"
   },
   "browserslist": [
     "> 1%",

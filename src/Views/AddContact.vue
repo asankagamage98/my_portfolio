@@ -4,19 +4,12 @@
   <div style="">
     <br><h1 style="color: #F79F1F; margin-left:50px;font-family:Times New Roman;"> Contact Form</h1><br>
   </div>
-  <!-- <div class="col-md-4">
-          <img
-            id="profImg"
-            class="rounded-circle overflow-hidden imgsrc"
-            src="../assets/cont.png"
-            alt="pro pic"
-          />
-        </div> -->
+  
   <form ref="form" @submit.prevent="sendEmail" style ="margin-left:50px">
     
-    <input class="textbox" type="text" name="from_name" placeholder="Name" v-model="name"><br>
-     <input class="textbox" type="email" name="from_name" placeholder="Email" v-model="email "><br>
-     <textarea class="textbox" name="message" placeholder="Massage" style="height:100px;" v-model="massage"></textarea><br><br><br>
+    <input class="textbox" type="text" name="from_name" placeholder="Name" v-model="name" required><br>
+     <input class="textbox" type="email" name="from_name" placeholder="Email" v-model="email " required><br>
+     <textarea class="textbox" name="message" placeholder="Massage" style="height:100px;" v-model="massage" required></textarea><br><br><br>
      <button type="submit" value="Send" class="btn btn-outline-danger btn1">Send Email</button>
     <button @click='resetForm' class="btn btn-outline-success btn1" style="width:110px;">  Clear  </button>  
 
@@ -30,7 +23,7 @@
 
 
 
-      <link rel="stylesheet" href="https://cdnjs.cloudfiare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudfiare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
        <div class="wrapper" style="display: flex; flex-direction: row;">
 
@@ -138,28 +131,36 @@ export default {
 
     //clear method
     resetForm(){
-          this.name = ""; 
-          this.email ="";
-          this.massage ="";
+      this.name = ''
+      this.email = ''
+      this.massage = ''
+    },
 
-             },
-     validationStatus: function(validation) {
-            return typeof validation != "undefined" ? validation.$error: false;
-        },
+    validationStatus: function(validation) {
+      return typeof validation != "undefined" ? validation.$error: false;
+    },
 
     sendEmail() {
+      if(this.name && this.email && this.massage) {
       emailjs.sendForm('service_9an8hox', 'template_ua9cxcq', this.$refs.form, 'user_6GkDUMeDNhKlmcZcGndGd')
         .then((result) => {
             console.log('SUCCESS!', result.text);
-                  swal("Success", "Completed !", "success"); 
+                  swal("Success", "Completed !", "success");
+                  this.resetForm(); 
 
         }, (error) => {
             console.log('FAILED...', error.text);
-              swal("Rejected","Fill all the required fields correctly !", "error", {
+              swal("Server Error","Server Error : " + error.text, "error", {
                     button: "Got It!"
                 });
             
         });
+
+      } else {
+        swal("Rejected","Fill all the required fields correctly !", "error", {
+                    button: "Got It!"
+                });
+      }
     }
   }
 }
